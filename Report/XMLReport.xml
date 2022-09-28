@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.772">
-    <testcase classname="To Register user" name="To Verify user is able to Register" time="9.77">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="59.329">
+    <testcase classname="To Register user" name="To Verify user is able to Register" time="21.569">
         <system-out><![CDATA[Given User is on Dashboard..................................................passed
 When Click on Register......................................................passed
 And Fill all Required Details and Register..................................passed
 Then Verify User is Register and Logout.....................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="To Register user" name="To Search Product" time="5.695">
+    <testcase classname="To Register user" name="To Search Product" time="5.41">
         <system-out><![CDATA[Given user is on dashboard..................................................passed
 When Enter any Product in search Bar and Search.............................passed
 Then Verify Product is searched and Logout..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Register user" name="Verify user is able to add GiftCard" time="31.981">
+        <system-out><![CDATA[Given user is on Dashboard..................................................passed
+When click on Giftcard......................................................passed
+And Add one product to cart with Details....................................passed
+And Go to shopping cart an checkout.........................................passed
+Then Verify user is able to send gift.......................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

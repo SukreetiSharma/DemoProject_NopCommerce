@@ -5,3 +5,15 @@ Feature: To Register user
     When Click on Register
     And Fill all Required Details and Register
     Then Verify User is Register and Logout
+
+  Scenario: To Search Product
+    Given user is on dashboard
+    When Enter any Product in search Bar and Search
+    Then Verify Product is searched and Logout
+
+  Scenario: Verify user is able to add GiftCard
+    Given user is on Dashboard
+    When click on Giftcard
+    And Add one product to cart with Details
+    And Go to shopping cart an checkout
+    Then Verify user is able to send gift

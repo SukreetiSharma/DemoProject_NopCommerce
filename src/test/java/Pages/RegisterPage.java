@@ -33,9 +33,11 @@ public class RegisterPage {
         this.driver=driver;
         this.wait=new WebDriverWait(driver, Duration.ofSeconds(20));
     }
+
     public void ClickRegister() {
         driver.findElement(Register).click();
     }
+
     public void FillDetails() {
         try {
             prop = new Properties();
@@ -57,6 +59,7 @@ public class RegisterPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(Reg));
         driver.findElement(Reg).click();
     }
+
     public void VerifyRegister(){
         String actual = driver.findElement(Success).getText();
         Assert.isTrue(actual.equals("Your registration completed"),"Expected result does not match with actual result");
