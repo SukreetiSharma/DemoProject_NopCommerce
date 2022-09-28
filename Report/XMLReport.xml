@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.772">
+    <testcase classname="To Register user" name="To Verify user is able to Register" time="9.77">
+        <system-out><![CDATA[Given User is on Dashboard..................................................passed
+When Click on Register......................................................passed
+And Fill all Required Details and Register..................................passed
+Then Verify User is Register and Logout.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="To Register user" name="To Search Product" time="5.695">
+        <system-out><![CDATA[Given user is on dashboard..................................................passed
+When Enter any Product in search Bar and Search.............................passed
+Then Verify Product is searched and Logout..................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
