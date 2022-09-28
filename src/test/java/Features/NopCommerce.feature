@@ -6,6 +6,11 @@ Feature: To Register user
     And Fill all Required Details and Register
     Then Verify User is Register and Logout
 
+  Scenario: To Search Product
+    Given user is on dashboard
+    When Enter any Product in search Bar and Search
+    Then Verify Product is searched and Logout
+
   Scenario: Verify user is able to add GiftCard
     Given user is on Dashboard
     When click on Giftcard

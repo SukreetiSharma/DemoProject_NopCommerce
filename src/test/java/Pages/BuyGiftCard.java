@@ -86,6 +86,7 @@ public class BuyGiftCard {
         driver.findElement(CheckOut).click();
         driver.findElement(Reg).click();
     }
+
     public void ContinueCheckout(){
         driver.findElement(Continue).click();
         driver.findElement(CheckBox).click();
@@ -107,6 +108,7 @@ public class BuyGiftCard {
         wait.until(ExpectedConditions.visibilityOfElementLocated(Confirm));
         driver.findElement(Confirm).click();
     }
+
     public void VerifyGiftcard(){
         wait.until(ExpectedConditions.visibilityOfElementLocated(SuccessMessage));
         String actual = driver.findElement(SuccessMessage).getText();

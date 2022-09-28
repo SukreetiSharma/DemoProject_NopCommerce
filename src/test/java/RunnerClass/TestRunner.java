@@ -11,5 +11,4 @@ import org.junit.runner.RunWith;
                 "html:Report/cucumberReport"},
         monochrome = true)
 
-public class TestRunner {
-}
+public class TestRunner{}

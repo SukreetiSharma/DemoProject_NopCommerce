@@ -2,11 +2,13 @@ package PageFactory;
 
 import Pages.BuyGiftCard;
 import Pages.RegisterPage;
+import Pages.SearchProduct;
 import org.openqa.selenium.WebDriver;
 
 public class PageFactory {
     public static WebDriver driver;
     public RegisterPage Register;
+    public SearchProduct Search;
     public BuyGiftCard GiftCard;
     public PageFactory(WebDriver driver){
         this.driver = driver;
@@ -16,6 +18,13 @@ public class PageFactory {
             Register = new RegisterPage(driver);
         }
         return Register;
+    }
+
+    public SearchProduct getSearch(){
+        if(Search == null){
+            Search = new SearchProduct(driver);
+        }
+        return Search;
     }
 
     public BuyGiftCard getGiftcard(){
