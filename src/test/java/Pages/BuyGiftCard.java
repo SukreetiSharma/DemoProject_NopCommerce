@@ -117,5 +117,4 @@ public class BuyGiftCard {
         driver.findElement(continues).click();
         driver.findElement(Logout).click();
     }
-
 }
